@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  box-shadow:
+    0 10px 15px -3px rgba(76, 29, 149, 0.4),
+    0 4px 6px -2px rgba(76, 29, 149, 0.4);
+
+  margin: 1rem;
+  border-radius: 0.75rem;
+  max-width: 36rem;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 42rem;
+  }
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.centralize {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
