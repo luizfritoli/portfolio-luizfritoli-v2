@@ -2,6 +2,7 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Greeting from "./components/Greeting";
 import HardSkills from "./components/HardSkills";
+import SoftSkills from "./components/SoftSkills";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Greeting />
       <AboutMe />
       <HardSkills />
+      <SoftSkills />
     </div>
   );
 };

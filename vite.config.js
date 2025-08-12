@@ -8,5 +8,5 @@ export default defineConfig({
     open: true,
     port: 1898,
   },
-  base: "/"
+  base: "./",
 });
