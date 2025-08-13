@@ -3,7 +3,7 @@ import SSkillsList from "./SSkillsList";
 
 const SoftSkills = () => {
   return (
-    <section className="flex justify-center pb-[6em] md:text-[1.4em]">
+    <section className="flex justify-center pb-[6em] md:text-[1.2em]">
       <div className="card">
         <h2 className="subtitle">Habilidades comportamentais (Soft Skills)</h2>
         <SSkillsList />

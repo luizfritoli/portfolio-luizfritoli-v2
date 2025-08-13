@@ -6,9 +6,9 @@ const LuizImage = () => {
       <img
         src={luizfritoliImg}
         alt="Luiz Fritoli Image"
-        className="w-64 h-64 md:w-96 md:h-96 rounded-full object-cover"
+        className="w-64 h-64 md:w-72 md:h-72 rounded-full object-cover"
       />
-      <figcaption className="mt-2 md:mt-4 text-sm text-violet-100 text-xl lg:text-2xl">
+      <figcaption className="mt-2 md:mt-4 text-sm text-violet-100 text-xl lg:text-xl">
         Estudante em desenvolvimento Front-End
       </figcaption>
     </figure>
