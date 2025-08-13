@@ -1,16 +1,16 @@
 import React from "react";
-import html5Icon from "../../assets/html5.png";
-import cssIcon from "../../assets/css.png";
-import javascriptIcon from "../../assets/javascript.png";
-import typescriptIcon from "../../assets/typescript.png";
-import tailwindIcon from "../../assets/tailwind.png";
-import reactIcon from "../../assets/react.png";
-import nextJsIcon from "../../assets/nextjs.png";
-import viteIcon from "../../assets/vite.png";
+import html5Icon from "../../assets/icons/html5.png";
+import cssIcon from "../../assets/icons/css.png";
+import javascriptIcon from "../../assets/icons/javascript.png";
+import typescriptIcon from "../../assets/icons/typescript.png";
+import tailwindIcon from "../../assets/icons/tailwind.png";
+import reactIcon from "../../assets/icons/react.png";
+import nextJsIcon from "../../assets/icons/nextjs.png";
+import viteIcon from "../../assets/icons/vite.png";
 
 const HSkillsList = () => {
   return (
-    <div className="w-full flex justify-center items-center">
+    <div className="w-full h-auto flex justify-center items-center">
       <div className="grid grid-cols-3 grid-rows-2 gap-8 justify-stretch items-center w-full p-4">
         <div className="flex flex-col justify-center items-center">
           <img src={html5Icon} alt="HTML" className="icon" />

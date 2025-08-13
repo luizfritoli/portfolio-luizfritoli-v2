@@ -31,11 +31,15 @@ const Greeting = () => {
 
   return (
     <section className="h-screen flex justify-center items-center w-full">
-      <div className="grid grid-rows-2 mt-20">
+      <div className="grid grid-rows-2 lg:flex gap-40 mt-20">
         <LuizImage />
-        <div>
-          <h1 className="w-full mt-10 ml-6 mb-10 text-[1.3em]">{typingName}</h1>
-          <SocialMedia />
+        <div className="lg:flex lg:justify-center lg:items-center lg:flex-col">
+          <h1 className="w-full mt-10 ml-6 mb-10 text-[1.3em] md:text-[1.7em] lg:text-[2.0em] md:ml-0">
+            {typingName}
+          </h1>
+          <div className="flex flex-col h-auto">
+            <SocialMedia />
+          </div>
         </div>
       </div>
     </section>
