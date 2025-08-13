@@ -21,8 +21,8 @@ const Projects = () => {
               />
             </div>
             <div className="flex flex-col gap-3 lg:max-w-[40%] text-xl justify-between text-center md:text-start md:ml-4 lg:ml-2">
-              <p className="mt-5">{project.description}</p>
-              <div className="flex flex-col gap-[5em]">
+              <p className="m-3">{project.description}</p>
+              <div className="flex flex-col gap-3 lg:gap-[5em]">
                 <span className="mt-10 lg:mt-0">
                   <strong>Linguagens: </strong>
                   {project.languages}

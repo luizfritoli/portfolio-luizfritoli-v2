@@ -34,7 +34,7 @@ const Greeting = () => {
       <div className="grid grid-rows-2 lg:flex gap-40 mt-20">
         <LuizImage />
         <div className="lg:flex lg:justify-center lg:items-center lg:flex-col">
-          <h1 className="w-full mt-10 ml-6 mb-10 text-[1.3em] md:text-[1.7em] md:ml-0">
+          <h1 className="w-full mt-6 ml-6 lg:mt-0 mb-8 text-[1.3em] md:text-[1.7em] md:ml-0">
             {typingName}
           </h1>
           <div className="flex flex-col h-auto">
