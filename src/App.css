@@ -8,8 +8,12 @@ h1 {
   font-family: monospace;
 }
 
-li {
+.soft-list {
   list-style: circle;
+}
+
+li {
+  list-style: none;
 }
 
 .card {

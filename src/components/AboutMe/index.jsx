@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <section className="flex justify-center items-center pb-[6em]">
+    <section id="about" className="flex justify-center items-center pb-[6em]">
       <div className="card">
         <h2 className="subtitle">Luiz em 1MB de memória</h2>
         <div className="flex justify-center items-center mt-[1em]">

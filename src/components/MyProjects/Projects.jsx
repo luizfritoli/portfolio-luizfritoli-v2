@@ -14,14 +14,16 @@ const Projects = () => {
           <h3 className="text-2xl font-bold mb-3 mt-3">{project.name}</h3>
           <div className="flex flex-col lg:flex-row gap-1">
             <div className="flex justify-center items-center p-2 lg:block lg:items-start lg:justify-start">
-              <img
-                src={project.img}
-                alt={project.name}
-                className="w-full max-w-[400px] md:max-w-full md:w-[100%] md:h-auto h-auto object-contain rounded-lg"
-              />
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={project.img}
+                  alt={project.name}
+                  className="w-full max-w-[400px] md:max-w-full md:w-[100%] md:h-auto h-auto object-contain rounded-lg"
+                />
+              </a>
             </div>
-            <div className="flex flex-col gap-3 lg:max-w-[40%] text-xl justify-between text-center md:text-start md:ml-4 lg:ml-2">
-              <p className="m-3">{project.description}</p>
+            <div className="flex flex-col gap-3 mr-1 lg:max-w-[40%] text-xl justify-between text-center md:text-start md:ml-4 lg:ml-2">
+              <p>{project.description}</p>
               <div className="flex flex-col gap-3 lg:gap-[5em]">
                 <span className="mt-10 lg:mt-0">
                   <strong>Linguagens: </strong>
