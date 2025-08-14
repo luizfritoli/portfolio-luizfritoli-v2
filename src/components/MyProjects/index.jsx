@@ -1,13 +1,16 @@
-import React from "react";
 import Projects from "./Projects";
+import { motion } from "motion/react";
 
 const MyProjects = () => {
   return (
     <section id="projects" className="flex justify-center w-full">
-      <div className="card">
+      <motion.div initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeInOut", duration: 0.8 }}
+        viewport={{ once: true }} className="card">
         <h2 className="subtitle">Meus projetos</h2>
         <Projects />
-      </div>
+      </motion.div>
     </section>
   );
 };

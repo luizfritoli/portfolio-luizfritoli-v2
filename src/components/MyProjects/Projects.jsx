@@ -1,13 +1,17 @@
-import React from "react";
 import { projects } from "./projectsList";
+import { motion } from "motion/react";
 
 import "../../App.css";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full">
+    <div
+      className="flex flex-col items-center justify-center w-full">
       {projects.map((project) => (
-        <div
+        <motion.div initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ ease: "easeInOut", duration: 1.2 }}
           key={project.id}
           className="flex flex-col items-center justify-center m-5 bg-[#27193f] shadow-[#3e2c5e] shadow-lg opacity-[75%] rounded-lg"
         >
@@ -26,7 +30,7 @@ const Projects = () => {
               <p>{project.description}</p>
               <div className="flex flex-col gap-3 lg:gap-[5em]">
                 <span className="mt-10 lg:mt-0">
-                  <strong>Linguagens: </strong>
+                  <strong>Tecnologias: </strong>
                   {project.languages}
                 </span>
                 <span className="mb-5">
@@ -36,7 +40,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
