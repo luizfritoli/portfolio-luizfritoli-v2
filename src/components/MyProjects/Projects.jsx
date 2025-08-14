@@ -22,7 +22,7 @@ const Projects = () => {
                 <img
                   src={project.img}
                   alt={project.name}
-                  className="w-full max-w-[400px] md:max-w-full md:w-[100%] md:h-auto h-auto object-contain rounded-lg"
+                  className="w-full max-w-[400px] md:max-w-full md:w-[100%] md:h-auto h-auto hover:scale-101 transition-all ease-in duration-300 object-contain rounded-lg"
                 />
               </a>
             </div>
