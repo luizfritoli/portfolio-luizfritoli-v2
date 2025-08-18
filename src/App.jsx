@@ -10,7 +10,7 @@ import SoftSkills from "./components/SoftSkills";
 
 const App = () => {
   return (
-    <div className="text-violet-100 bg-gradient-to-br from-[#111010] via-[#130d1a] to-[#2c1a3f] scroll-smooth">
+    <div className="text-violet-100 bg-gradient-to-br from-[#111010] via-[#130d1a] to-[#2c1a3f] scroll-smooth selection:text-neutral-700 selection:bg-violet-200">
       <Navbar />
       <NavbarMobile />
       <Greeting />

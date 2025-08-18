@@ -1,5 +1,6 @@
 import { projects } from "./projectsList";
 import { motion } from "motion/react";
+import { GoCalendar } from "react-icons/go";
 
 import "../../App.css";
 
@@ -29,13 +30,13 @@ const Projects = () => {
             <div className="flex flex-col gap-3 mr-1 lg:max-w-[40%] text-xl justify-between text-center md:text-start md:ml-4 lg:ml-2">
               <p>{project.description}</p>
               <div className="flex flex-col gap-3 lg:gap-[5em]">
-                <span className="mt-10 lg:mt-0">
-                  <strong>Tecnologias: </strong>
-                  {project.languages}
+                <span className="flex flex-wrap justify-center items-center text-[0.79em] md:text-[0.94em] gap-4 lg:justify-start ">
+                  {project.languages.map((t, index) => (
+                    <li key={index} className="rounded-md p-1 bg-[#403769] md:mb-5 md:mt-5 cursor-pointer hover:scale-110 transition-all duration-300 ease-in">{t}</li>
+                  ))}
                 </span>
-                <span className="mb-5">
-                  <strong>Finalizado em: </strong>
-                  {project.month}/{project.year}
+                <span className="mb-5 text-[#ffffff89] flex gap-2 flex justify-center md:justify-start">
+                  <GoCalendar />{project.month} de {project.year}
                 </span>
               </div>
             </div>
