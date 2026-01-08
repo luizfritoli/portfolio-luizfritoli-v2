@@ -11,8 +11,8 @@ const AboutMe = () => {
         className="card ">
         
         <div className="flex flex-col justify-center items-start px-16">
-          <h2 className="font-bold text-[1.2rem] pl-8">Sobre mim, digo que</h2>
-          <p className="text-[0.7em] md:text-[1.1em] text-justify px-8 py-[0.4em]">
+          <h2 className="font-bold text-[1.2rem] pl-2">Sobre mim, digo que</h2>
+          <p className="text-[0.7em] md:text-[1.1em] text-justify px-2 py-[0.4em]">
             sou técnico em informática e estudante de{" "}
             <strong>Engenharia de Software</strong> pela Uniasselvi, atualmente
             no 3° semestre, com previsão de término em dezembro de 2028. Tenho
