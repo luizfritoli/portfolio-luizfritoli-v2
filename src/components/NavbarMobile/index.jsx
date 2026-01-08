@@ -4,7 +4,7 @@ import logoLuiz from "/logo_luiz_white.png";
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-[#3b2066ba] shadow-md fixed w-full top-0 z-50 md:hidden">
+    <nav className="bg-[#292929] shadow-md fixed w-full top-0 z-50 md:hidden text-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">

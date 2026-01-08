@@ -1,6 +1,6 @@
-import { languages } from "eslint-plugin-prettier";
 import habitflowImg from "../../assets/projectsImgs/habitflow.png";
 import shapeviewImg from "../../assets/projectsImgs/shapeview.png";
+import wicebankImg from "../../assets/projectsImgs/wicebank.png"
 
 export const projects = [
   {
@@ -25,4 +25,15 @@ export const projects = [
     month: "Agosto",
     year: 2025,
   },
+  {
+    projectId: "wicebank",
+    name: "WiceBank",
+    img: wicebankImg,
+    link: "https://wicebank.vercel.app",
+    description:
+      "Projeto simulando um banco digital, com possibilidade de login, registro, analisar extrato e receber e transferir valores.",
+    languages: ["Next.js", "TypeScript", "CSS"],
+    month: "Outubro",
+    year: 2025,
+  }
 ];

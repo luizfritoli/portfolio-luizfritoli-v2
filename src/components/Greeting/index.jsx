@@ -4,36 +4,10 @@ import SocialMedia from "./SocialMedia";
 import { motion } from "motion/react";
 
 const Greeting = () => {
-  const charLf = "Olá,\nEu sou o Luiz Fritoli!";
-  const interval = 110;
-  const char = charLf.split("").reverse();
-
-  const [typingName, setTypingName] = useState([]);
-
-  useEffect(() => {
-    const typer = setInterval(() => {
-      if (!char.length) {
-        clearInterval(typer);
-        return;
-      }
-
-      const nextChar = char.pop();
-      setTypingName((prev) => {
-        if (nextChar === "\n") {
-          return [...prev, <br key={prev.length} />];
-        } else {
-          return [...prev, nextChar];
-        }
-      });
-    }, interval);
-
-    return () => clearInterval(typer);
-  }, []);
-
   return (
     <section
       id="greeting"
-      className="h-screen flex justify-center items-center w-full"
+      className="h-screen flex justify-center items-center w-full text-[#000]"
     >
       <motion.div initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -42,7 +16,7 @@ const Greeting = () => {
         <LuizImage />
         <div className="lg:flex lg:justify-center lg:items-center lg:flex-col">
           <h1 className="w-full mt-6 ml-6 lg:mt-0 mb-5 text-[1.3em] md:text-[1.9em] md:ml-0 lg:ml-25">
-            {typingName}
+            Olá, <br />eu sou o Luiz Fritoli!
           </h1>
           <div className="flex flex-col h-auto">
             <SocialMedia />

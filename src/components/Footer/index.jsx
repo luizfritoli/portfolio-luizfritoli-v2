@@ -3,7 +3,7 @@ import logoLuiz from "/logo_luiz_white.png";
 
 const Footer = () => {
   return (
-    <footer className="min-h-[6em] h-auto bg-[#220e429b] text-[0.8em] flex flex-col justify-around">
+    <footer className="min-h-[6em] h-auto bg-[#292929] text-[0.8em] text-white flex flex-col justify-around">
       <p className="text-center mb-1 mt-1">
         © Pensado e feito por <strong>Luiz Fritoli</strong>.
       </p>
